@@ -376,3 +376,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Xiaomi Ringtone
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/Mi.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Mi.ogg \
+    $(LOCAL_PATH)/media/MIX.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/MIX.ogg \
+    $(LOCAL_PATH)/media/MiRemix.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/MiRemix.ogg
+
