@@ -250,6 +250,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr \
     libqti-perfd-client
 
+# powerstats HAL
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats@1.0-service.xiaomi
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor

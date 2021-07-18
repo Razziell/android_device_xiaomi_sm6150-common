@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power.stats@1.0-service.pixel"
+#define LOG_TAG "android.hardware.power.stats@1.0-service.xiaomi"
 
 #include <android/log.h>
 #include <binder/IPCThreadState.h>
@@ -26,9 +26,6 @@
 #include <pixelpowerstats/GenericStateResidencyDataProvider.h>
 #include <pixelpowerstats/PowerStats.h>
 #include <pixelpowerstats/WlanStateResidencyDataProvider.h>
-#include <pixelpowerstats/DisplayStateResidencyDataProvider.h>
-
-#include "RailDataProvider.h"
 
 using android::OK;
 using android::sp;
@@ -51,18 +48,12 @@ using android::hardware::google::pixel::powerstats::generateGenericStateResidenc
 using android::hardware::google::pixel::powerstats::GenericStateResidencyDataProvider;
 using android::hardware::google::pixel::powerstats::PowerEntityConfig;
 using android::hardware::google::pixel::powerstats::StateResidencyConfig;
-using android::hardware::google::pixel::powerstats::RailDataProvider;
 using android::hardware::google::pixel::powerstats::WlanStateResidencyDataProvider;
-using android::hardware::google::pixel::powerstats::DisplayStateResidencyDataProvider;
 
 int main(int /* argc */, char ** /* argv */) {
     ALOGE("power.stats service 1.0 is starting.");
 
-
     PowerStats *service = new PowerStats();
-
-    // Add rail data provider
-    service->setRailDataProvider(std::make_unique<RailDataProvider>());
 
     // Add power entities related to rpmh
     const uint64_t RPM_CLK = 19200;  // RPM runs at 19.2Mhz. Divide by 19200 for msec
@@ -121,19 +112,11 @@ int main(int /* argc */, char ** /* argv */) {
     // Add WLAN power entity
     uint32_t wlanId = service->addPowerEntity("WLAN", PowerEntityType::SUBSYSTEM);
     sp<WlanStateResidencyDataProvider> wlanSdp =
-            new WlanStateResidencyDataProvider(wlanId, "/sys/kernel/wlan/power_stats");
+            new WlanStateResidencyDataProvider(wlanId, "/sys/kernel/wifi/power_stats");
     service->addStateResidencyDataProvider(wlanSdp);
-
-    uint32_t displayId = service->addPowerEntity("Display", PowerEntityType::SUBSYSTEM);
-    sp<DisplayStateResidencyDataProvider> displaySdp =
-        new DisplayStateResidencyDataProvider(displayId,
-        "/sys/class/backlight/panel0-backlight/state", {"Off", "LP", "1080x2340@60"});
-    service->addStateResidencyDataProvider(displaySdp);
 
     // Add Power Entities that require the Aidl data provider
     sp<AidlStateResidencyDataProvider> aidlSdp = new AidlStateResidencyDataProvider();
-    uint32_t citadelId = service->addPowerEntity("Citadel", PowerEntityType::SUBSYSTEM);
-    aidlSdp->addEntity(citadelId, "Citadel", {"Last-Reset", "Active", "Deep-Sleep"});
 
     auto serviceStatus = android::defaultServiceManager()->addService(
         android::String16("power.stats-vendor"), aidlSdp);
