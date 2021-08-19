@@ -380,6 +380,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     ipacm \
     IPACM_cfg.xml \
+    libwifi-hal-ctrl \
     libwpa_client \
     WifiOverlay \
     wpa_supplicant \
