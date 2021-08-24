@@ -41,8 +41,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio@2.0-impl:32 \
-    android.hardware.soundtrigger@2.2-impl:32
+    android.hardware.bluetooth.audio@2.0-impl:32
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -61,9 +60,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
