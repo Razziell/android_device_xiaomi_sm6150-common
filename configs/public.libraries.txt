@@ -6,6 +6,7 @@ libcdsprpc.so
 libfastcvopt.so
 libHalSuperSensorServer.so
 libhta_hexagon_runtime.so
+liblistensoundmodel2.so
 libnpu.so
 libOpenCL.so
 libsdsprpc.so
