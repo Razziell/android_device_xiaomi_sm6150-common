@@ -1,4 +1,6 @@
-# ADSP
+# Device proprietary files - from davinci MIUI V12.5.1.0.RFJCNXM package, unless pinned
+
+# ADSP - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc
@@ -14,9 +16,6 @@ vendor/lib/libadsprpc.so
 vendor/lib/libcdsp_default_listener.so
 
 # ADSP modules
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
@@ -41,7 +40,7 @@ vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
-# Alarm
+# Alarm - from LA.UM.9.1.r1-10900-SMxxx0.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
@@ -85,7 +84,7 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
-# Charger
+# Charger - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hvdcp_opti
 
 # CNE
@@ -145,24 +144,22 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 
-# Configstore
+# Configstore - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display
+# Display - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libqseed3.so
+vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
-
-# Display - from NX627J 20201029.204053
-vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
 # DPM
 framework/tcmclient.jar
@@ -211,7 +208,7 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
-# DSP
+# DSP - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
@@ -224,7 +221,7 @@ system_ext/lib64/libfm-hci.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Graphics
+# Graphics - from LA.UM.9.1.r1-10900-SMxxx0.0
 -vendor/app/com.qualcomm.qti.gpudrivers.sm6150.api30/com.qualcomm.qti.gpudrivers.sm6150.api30.apk;PRESIGNED
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
@@ -268,7 +265,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GPS
+# GPS - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/slim_daemon
@@ -359,7 +356,7 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 # IPA
 vendor/etc/init/ipa_fws.rc
 
-# IRQ balance
+# IRQ balance - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/msm_irqbalance
 
 # Keymaster
@@ -383,7 +380,7 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/librice.so
 vendor/lib/libsmwrapper.so
 
-# Media
+# Media - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
@@ -428,19 +425,20 @@ vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
 
-# Neural networks
+# Neural networks - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta_hexagon_runtime.so
+vendor/lib64/libnpu.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# Peripheral Manager
+# Peripheral Manager - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
@@ -552,7 +550,7 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
-# Snapdragon Computer Vision Engine
+# Snapdragon Computer Vision Engine - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libscveCommon.so
@@ -569,13 +567,13 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Time
+# Time - from LA.UM.9.1.r1-10900-SMxxx0.0
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# WiFi Display
+# WiFi Display - from LA.UM.9.1.r1-10900-SMxxx0.0
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice
 system_ext/etc/init/wfdservice.rc
@@ -654,6 +652,23 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# WiFi Display - HDCP - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/bin/wfdhdcphalservice
+vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
+vendor/etc/seccomp_policy/wfdhdcphalservice.policy
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libwfdhdcpcp.so
+vendor/lib/libwfdhdcpservice_proprietary.so
+vendor/lib/libwfdmodulehdcpsession.so
+vendor/lib64/libhdcp1prov.so
+vendor/lib64/libhdcp2p2prov.so
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/libwfdhdcpcp.so
 
 # Xiaomi MAC
 vendor/bin/nv_mac
