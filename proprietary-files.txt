@@ -480,9 +480,14 @@ vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
 # RIL
+-system_ext/app/datastatusnotification/datastatusnotification.apk
+-system_ext/app/DeviceInfo/DeviceInfo.apk
+-system_ext/app/embms/embms.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephonyservice.xml
+system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar|41f1a4639f9b720e388c18c6264dcdb6bcfca4a0
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
