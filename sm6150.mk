@@ -257,7 +257,7 @@ PRODUCT_PACKAGES += \
 
 # powerstats HAL
 PRODUCT_PACKAGES += \
-    android.hardware.power.stats@1.0-service.xiaomi
+    android.hardware.power.stats@1.0-service.mock
 
 # QTI
 PRODUCT_PACKAGES += \
