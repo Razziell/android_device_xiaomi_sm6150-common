@@ -274,6 +274,7 @@ vendor/bin/xtra-daemon
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcdfw.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libizat_client_api.so
