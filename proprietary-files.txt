@@ -56,9 +56,6 @@ vendor/lib/libadm.so
 vendor/lib/libqtigef.so
 
 # Audio FX modules
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
-vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
 # Bluetooth
