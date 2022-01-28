@@ -368,7 +368,7 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
-# Listen - from davinci MIUI V12.1.1.0.RFJEUXM
+# Listen - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/lib/hw/sound_trigger.primary.sm6150.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
@@ -378,7 +378,6 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
-vendor/lib/librice.so
 vendor/lib/libsmwrapper.so
 
 # Media - from LA.UM.9.1.r1-10900-SMxxx0.0
