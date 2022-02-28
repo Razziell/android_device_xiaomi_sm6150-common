@@ -508,7 +508,7 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar
+system_ext/framework/qti-telephony-common.jar|f003f368ccd0faf3d97179b06f9c86b1c605df0b
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/bin/adpl
 -vendor/bin/hw/qcrild
