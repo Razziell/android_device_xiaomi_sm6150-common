@@ -57,6 +57,13 @@ system_ext/framework/audiosphere.jar
 -vendor/lib/soundfx/libasphere.so
 -vendor/lib/soundfx/libshoebox.so
 
+# Dolby
+-vendor/lib/soundfx/libhwdap.so
+-vendor/lib/soundfx/libswgamedap.so
+-vendor/lib/soundfx/libswvqe.so
+-vendor/lib/libdapparamstorage.so
+-vendor/lib/vendor.dolby.hardware.dms@2.0.so
+
 # Audio libraries
 -vendor/lib/libadm.so
 -vendor/lib/libqtigef.so
