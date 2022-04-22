@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.3.0.SKFINXM, unless pinned
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.8.0.SKFEUXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
@@ -515,7 +515,7 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/framework/qcrilhook.jar
-system_ext/framework/qti-telephony-common.jar|f003f368ccd0faf3d97179b06f9c86b1c605df0b
+system_ext/framework/qti-telephony-common.jar|5fc9126478d032c624f2f9ab64f526a73d46180d
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/bin/adpl
 -vendor/bin/hw/qcrild
