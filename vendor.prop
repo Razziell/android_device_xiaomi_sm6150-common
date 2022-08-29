@@ -113,6 +113,7 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Display
+debug.renderengine.backend=skiaglthreaded
 debug.sf.enable_hwc_vds=1
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
