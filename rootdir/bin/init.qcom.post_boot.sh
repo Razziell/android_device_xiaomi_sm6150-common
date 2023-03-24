@@ -254,6 +254,9 @@ case "$soc_id" in
     ;;
 esac
 
+# Enable boeffla_wakelock_blocker
+    echo 1 > /sys/class/misc/boeffla_wakelock_blocker/enabled
+
 # Enable PowerHAL hint processing
 setprop vendor.powerhal.init 1
 
