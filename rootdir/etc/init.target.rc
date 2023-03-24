@@ -73,7 +73,6 @@ on post-fs-data
 
 on boot
     start vendor.rmt_storage
-    start vendor.rfs_access
     start vendor.msm_irqbalance
 
     # Set thermal mode to evaluation
