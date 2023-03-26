@@ -1,2 +1,12 @@
 # To set powerhal init property
 set_prop(vendor_qti_init_shell, vendor_power_prop)
+
+allow vendor_qti_init_shell sysfs:file write;
+
+allow vendor_qti_init_shell {
+  proc
+  sysfs
+  sysfs_devices_system_cpu
+  vendor_sysfs_devfreq
+  vendor_sysfs_msm_power
+}:file create;

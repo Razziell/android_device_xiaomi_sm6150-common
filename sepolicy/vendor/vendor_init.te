@@ -1,3 +1,8 @@
 set_prop(vendor_init, vendor_fp_prop)
 allow vendor_init proc_dirty:file w_file_perms;
 set_prop(vendor_init, vendor_ims_prop)
+
+allow vendor_init {
+  sysfs
+  sysfs_zram
+}:file create;
