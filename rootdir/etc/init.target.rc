@@ -74,6 +74,9 @@ on post-fs
     chown system system /sys/class/misc/boeffla_wakelock_blocker/enabled
     chmod 0644 /sys/class/misc/boeffla_wakelock_blocker/enabled
 
+    # Enable boeffla_wakelock_blocker
+    write /sys/class/misc/boeffla_wakelock_blocker/enabled 1
+
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
     mkdir /data/vendor/nfc 0770 nfc nfc
