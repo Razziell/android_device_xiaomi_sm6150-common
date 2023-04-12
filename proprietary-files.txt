@@ -38,7 +38,7 @@ vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
-# Alarm - from LA.UM.9.1.r1-10900-SMxxx0.0
+# Alarm - from davinci MIUI V12.1.4.0.RFJMIXM
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
