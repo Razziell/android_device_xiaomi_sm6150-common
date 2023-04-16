@@ -111,6 +111,9 @@ on property:sys.boot_completed=1
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
 
+    # Enable zRAM data deduplication feature
+    write /sys/block/zram0/use_dedup 1
+
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.zram
 
