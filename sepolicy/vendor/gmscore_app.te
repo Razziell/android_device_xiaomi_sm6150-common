@@ -1,0 +1,4 @@
+allow gmscore_app { adbd_prop apexd_prop }:file { getattr map open };
+allow gmscore_app apk_verity_prop:file open;
+allow gmscore_app kernel:security read_policy;
+allow gmscore_app hal_memtrack_default:binder call;
