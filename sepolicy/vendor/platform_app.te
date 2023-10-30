@@ -1,0 +1,6 @@
+allow platform_app app_data_file:file { execute };
+allow platform_app cgroup_bpf:dir { search };
+allow platform_app vendor_default_prop:file { getattr open };
+allow platform_app vendor_sysfs_kgsl:file { read open };
+allow platform_app vendor_xdsp_device:chr_file { ioctl read open };
+allow platform_app adsprpcd_file:dir { getattr search };
